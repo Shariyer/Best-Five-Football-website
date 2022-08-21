@@ -9,12 +9,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body class="bg-blue-400 w-11/12 mx-auto">
+<body class="bg-sky-100 w-11/12 mx-auto">
     <!--  header part starts -->
     <header class="flex justify-center ">
      <div class="background-pic">
-        <img class="object-fill mt-10 relative" src="images/bg-cover.jpg">
-        <!-- <h1 class=" text-black text-5xl ">text</h1> -->
+        <img class="object-cover mt-10 relative " src="images/bg-cover.jpg">
+        <h1 class=" text-blue-900 text-7xl  font-extrabold absolute top-20 left-80">SELECT YOUR PLAYER</h1>
+        <p class="text-white text-center text-3xl absolute top-80 mx-20 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis hic perferendis voluptas veniam beatae voluptatum repellat porro quis placeat accusamus iure voluptates fuga quas aperiam omn</p>
      </div>
     
     </header>
@@ -26,13 +27,14 @@
         
     </main>
     <!-- main part ends -->
-    <section class="ml-10">
+    <section class="ml-2 mb-20">
         <div class="flex ">
-            <div class="grid grid-cols-3 gap-5 w-9/12">
+            <div class="grid grid-cols-3 gap-y-5  w-9/12 mx-auto">
     
                 <div class=" w-3/4 h-96 bg-base-100 shadow-xl bg-blue-200 rounded-xl">
-                    <figure class="px-10 pt-10">
+                    <figure class="px-10 pt-10 ">
                         <img src="images/players/messi.jpg" class="rounded-xl h-1/2" />
+                        
                     </figure>
                     <div class=" items-center text-center">
                         <h2 class="card-title">Lionel Messi</h2>
@@ -41,7 +43,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -56,7 +58,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -71,7 +73,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -86,7 +88,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -101,7 +103,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -116,7 +118,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -131,7 +133,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -146,7 +148,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -161,7 +163,7 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button class="bg-blue-900 px-20 py-2 rounded mt-10">SELECT</button>
+                            <button class="bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
@@ -172,7 +174,8 @@
                     <h2 class="text-xl mt-5">Selected Players</h2>
             
                 </div>
-                <div class="w-72 h-96 border bg-blue-300 shadow-xl rounded-xl mb-5">
+
+                <div class="w-72 h-96 border bg-blue-300 shadow-xl rounded-xl mb-5 ">
                     <h1 class="text-3xl font-bold text-center mb-5">Budget</h1>
                     <h3 class="font-semibold">Per Player: <input id="per-player-cost-input-field" class="bg-sky-200 rounded  text-black"
                             type="text" placeholder="    Player cost"></h3>
