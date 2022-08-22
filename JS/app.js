@@ -1,5 +1,5 @@
 
-const playerNumber = 5;
+let playerNumber = 5;
 // eventListener for calculate button
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
@@ -38,3 +38,25 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
         settingValueOnId('grand-total', totalCost);
     }
 })
+
+
+
+//                 selection of 5 players
+const array = [];
+const selectedPlayer = document.getElementsByClassName('selected-btn');
+// console.log(selectedPlayer)
+
+// validation for more than 5 selected player
+
+
+
+    for (let i = 0; i < selectedPlayer.length; i++){
+    selectedPlayer[i].addEventListener('click', function (event) {
+        const target = event.target.parentNode.parentNode;
+        const name = target.getElementsByClassName('name')[0].innerText;
+        array.push(name)
+        
+       displaySelectedPlayer(array);
+        
+    })
+}
