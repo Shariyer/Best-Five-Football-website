@@ -1,5 +1,5 @@
 
-let playerNumber = 5;
+let playerNumber;
 // eventListener for calculate button
 
 document.getElementById('calculate-btn').addEventListener('click', function () {
@@ -56,7 +56,7 @@ const selectedPlayer = document.getElementsByClassName('selected-btn');
         const name = target.getElementsByClassName('name')[0].innerText;
         array.push(name)
         
-       displaySelectedPlayer(array);
-        
+        playerNumber = displaySelectedPlayer(array);
+
     })
 }

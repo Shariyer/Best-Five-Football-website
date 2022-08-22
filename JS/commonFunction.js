@@ -31,9 +31,12 @@ function gettingValueFromIdInt(idTypeString) {
 function displaySelectedPlayer(array) {
     // validation for more than 5 players 
     if (array.length <= 5) {
-         const playerBillboard = document.getElementById('show-players')
+        const playerBillboard = document.getElementById('show-players')
         playerBillboard.innerHTML = "";
+        
+
         for (i = 0; i < array.length; i++){
+            playerNumber = array.length;
             
             const name = array[i];
             const serialId = i+1;
@@ -44,6 +47,7 @@ function displaySelectedPlayer(array) {
 
             playerBillboard.appendChild(tr);        
         }
+        return playerNumber;
     }
     // invalid condition 
     else (
