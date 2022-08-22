@@ -44,19 +44,38 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 //                 selection of 5 players
 const array = [];
 const selectedPlayer = document.getElementsByClassName('selected-btn');
-// console.log(selectedPlayer)
+
 
 // validation for more than 5 selected player
 
 
-
+let count=0;
     for (let i = 0; i < selectedPlayer.length; i++){
-    selectedPlayer[i].addEventListener('click', function (event) {
-        const target = event.target.parentNode.parentNode;
-        const name = target.getElementsByClassName('name')[0].innerText;
-        array.push(name)
+        selectedPlayer[i].addEventListener('click', function (event) {
         
-        playerNumber = displaySelectedPlayer(array);
+        const textParentNode = event.target.parentNode.parentNode;
+        
+
+        const name = textParentNode.getElementsByClassName('name')[0].innerText;
+        
+        array.push(name);
+        // if (count <= 5) {
+            
+        // }
+        // else {
+        //     alert('You have already selected 5 players');
+        // }
+        // count++;
+    //    const btnParent= event.target.parentNode.
+        const btnId = event.target.id;
+        document.getElementById(btnId).disabled=true;
+        
+        // btnParent.disabled = true;
+        // btnParent.getElementsByClassName('player-selection-btn')[0].disabled = true;
+        
+        
+            playerNumber = displaySelectedPlayer(array);
+            console.log(playerNumber);
 
     })
 }

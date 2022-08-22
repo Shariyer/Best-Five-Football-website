@@ -14,8 +14,8 @@
     <header class="flex justify-center ">
      <div class="background-pic">
         <img class="object-cover mt-10 relative " src="images/bg-cover.jpg">
-        <h1 class=" text-blue-900 text-7xl  font-extrabold absolute top-20 left-80">SELECT YOUR PLAYER</h1>
-        <p class="text-white text-center text-3xl absolute top-80 mx-20 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam debitis hic perferendis voluptas veniam beatae voluptatum repellat porro quis placeat accusamus iure voluptates fuga quas aperiam omn</p>
+        <h1 class=" text-blue-900 lg:text-7xl md:text-4xl sm:text-base font-extrabold absolute lg:top-20 lg:left-80 md:top-20 md:left-48">SELECT YOUR PLAYER</h1>
+        <p class="text-white text-center lg:text-3xl md:text-xl lg:text-base absolute lg:top-80 md:top-40 mx-20 ">Select your best player among the PSG team members to create your best 5 line up in your team.Think who can be suitable among the displayed players.</p>
      </div>
     
     </header>
@@ -28,10 +28,10 @@
     </main>
     <!-- main part ends -->
     <section class="ml-2 mb-20">
-        <div id="select-player" class="flex ">
-            <div class="grid grid-cols-3 gap-y-5  w-9/12 mx-auto">
+        <div id="select-player" class="flex  ">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 lg:gap-y-5 md:gap-y-1  w-9/12 mx-auto">
                        <!-- card start -->
-                <div class=" w-3/4 h-96 bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
                     <figure class="px-10 pt-10 ">
                         <img src="images/players/messi.jpg" class="rounded-xl h-1/2" />
                         
@@ -43,23 +43,155 @@
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button id="messi-btn" class="selected-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                            <button id="messi" class="selected-btn bg-blue-900 md:px-12 md:py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
-                <div class=" w-3/4 h-96 bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
                     <figure class="px-10 pt-10 ">
-                        <img src="images/players/messi.jpg" class="rounded-xl h-1/2" />
+                        <img src="images/players/neymar.jpg" class="rounded-xl h-1/2" />
                         
                     </figure>
                     <div class=" items-center text-center">
-                        <h2 id="player-name" class="name font-bold text-xl"> Messi</h2>
+                        <h2 id="player-name" class="name font-bold text-xl"> Neymar</h2>
                         <span>
                             <span>36<span>Goals</span></span>
                             <span>120<span>Assets</span></span>
                         </span>
                         <div class="">
-                            <button id="messi-btn" class="selected-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                            <button id="neymar" class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="images/players/mbappe.jpg" class="rounded-xl h-1/2" />
+                        
+                    </figure>
+                    <div class=" items-center text-center">
+                        <h2 id="player-name" class="name font-bold text-xl"> Mbappe</h2>
+                        <span>
+                            <span>36<span>Goals</span></span>
+                            <span>120<span>Assets</span></span>
+                        </span>
+                        <div class="">
+                            <button id="Mbappe" class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="images/players/ramos.jpg" class="rounded-xl h-1/2" />
+                        
+                    </figure>
+                    <div class=" items-center text-center">
+                        <h2 id="player-name" class="name font-bold text-xl"> Ramos</h2>
+                        <span>
+                            <span>36<span>Goals</span></span>
+                            <span>120<span>Assets</span></span>
+                        </span>
+                        <div class="">
+                            <button id="Ramos" class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="images/players/draxler.jpg" class="rounded-xl h-1/2" />
+                        
+                    </figure>
+                    <div class=" items-center text-center">
+                        <h2 id="player-name" class="name font-bold text-xl"> Draxler</h2>
+                        <span>
+                            <span>36<span>Goals</span></span>
+                            <span>120<span>Assets</span></span>
+                        </span>
+                        <div class="">
+                            <button id="Draxler" class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="images/players/icardi.jpg" class="rounded-xl h-1/2" />
+                        
+                    </figure>
+                    <div class=" items-center text-center">
+                        <h2 id="player-name" class="name font-bold text-xl"> I cardi</h2>
+                        <span>
+                            <span>36<span>Goals</span></span>
+                            <span>120<span>Assets</span></span>
+                        </span>
+                        <div class="">
+                            <button id="cardi" class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="images/players/layvin-kurzawa.jpg" class="rounded-xl h-1/2" />
+                
+                    </figure>
+                    <div class=" items-center text-center">
+                        <h2 id="player-name" class="name font-bold text-xl"> Layvin Kurzawa</h2>
+                        <span>
+                            <span>36<span>Goals</span></span>
+                            <span>120<span>Assets</span></span>
+                        </span>
+                        <div class="">
+                            <button id="Kurzawa"
+                                class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="images/players/paredes.jpg" class="rounded-xl h-1/2" />
+                
+                    </figure>
+                    <div class=" items-center text-center">
+                        <h2 id="player-name" class="name font-bold text-xl">Paredes</h2>
+                        <span>
+                            <span>36<span>Goals</span></span>
+                            <span>120<span>Assets</span></span>
+                        </span>
+                        <div class="">
+                            <button id="Paredes"
+                                class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="images/players/rafinha.jpg" class="rounded-xl h-1/2" />
+                
+                    </figure>
+                    <div class=" items-center text-center">
+                        <h2 id="player-name" class="name font-bold text-xl"> Rafinha</h2>
+                        <span>
+                            <span>36<span>Goals</span></span>
+                            <span>120<span>Assets</span></span>
+                        </span>
+                        <div class="">
+                            <button id="Rafinha"
+                                class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
+                        </div>
+                    </div>
+                </div>
+                <div class=" w-3/4 h-auto bg-base-100 shadow-xl bg-blue-200 rounded-xl">
+                    <figure class="px-10 pt-10 ">
+                        <img src="images/players/donnarumma.jpg" class="rounded-xl h-1/2" />
+                
+                    </figure>
+                    <div class=" items-center text-center">
+                        <h2 id="player-name" class="name font-bold text-xl">Donna Ruma</h2>
+                        <span>
+                            <span>36<span>Goals</span></span>
+                            <span>120<span>Assets</span></span>
+                        </span>
+                        <div class="">
+                            <button id="Donna"
+                                class="selected-btn player-selection-btn bg-blue-900 px-16 py-2 rounded ">SELECT</button>
                         </div>
                     </div>
                 </div>
