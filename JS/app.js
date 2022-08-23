@@ -12,17 +12,18 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
            alert('You must need to select player first')
     }
     else {
-        const totalPlayerExpense = playerNumber * perPlayerInputCost;
+            const totalPlayerExpense = playerNumber * perPlayerInputCost;
+        if (isNaN(totalPlayerExpense)) {
+            settingValueOnId('total-player-expense', '00');
+        }
+        else {
+            settingValueOnId('total-player-expense', totalPlayerExpense);
+        }
     }
             
     // setting total expenses in id of total expenses
     
-    if (isNaN(totalPlayerExpense)) {
-        settingValueOnId('total-player-expense', '00');
-    }
-    else {
-        settingValueOnId('total-player-expense', totalPlayerExpense);
-    }
+   
 
 })
 
