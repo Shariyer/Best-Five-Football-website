@@ -6,7 +6,15 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
         // getting per player cost from per player input field 
     const perPlayerInputCost = gettingValueFromInputField('per-player-cost-input-field');
   //    calculating total expenses of players
-    const totalPlayerExpense = playerNumber * perPlayerInputCost;
+    
+    if (isNaN(playerNumber)){
+                //validation for empty player field 
+           alert('You must need to select player first')
+    }
+    else {
+        const totalPlayerExpense = playerNumber * perPlayerInputCost;
+    }
+            
     // setting total expenses in id of total expenses
     
     if (isNaN(totalPlayerExpense)) {
@@ -42,7 +50,9 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
 
 
 //                 selection of 5 players
+// declaring array
 const array = [];
+// selecting all select button by using class
 const selectedPlayer = document.getElementsByClassName('selected-btn');
 
 
@@ -75,7 +85,7 @@ let count=0;
         
         
             playerNumber = displaySelectedPlayer(array);
-            console.log(playerNumber);
+            
 
     })
 }
