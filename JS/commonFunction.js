@@ -4,7 +4,7 @@ function gettingValueFromInputField(idTypeString) {
     const inputValue = inputValueString.value;
     // number validation for input field
     if (isNaN(inputValue) ) {
-        alert('Please provide numbers in Input Field')
+        alert('Please provide numbers as input')
         inputValueString.value = '';
     }
     else {
@@ -19,6 +19,8 @@ function settingValueOnId(idTypeString, value) {
     document.getElementById(idTypeString).innerText = value;
 
 }
+
+
 // getting integer value from specific id  
 function gettingValueFromIdInt(idTypeString) {
    const inputValueString = document.getElementById(idTypeString);
@@ -33,10 +35,10 @@ function displaySelectedPlayer(array) {
     if (array.length <= 5) {
         const playerBillboard = document.getElementById('show-players')
         playerBillboard.innerHTML = "";
-        
+        playerNumber = array.length;
 
         for (i = 0; i < array.length; i++){
-            playerNumber = array.length;
+            
             
             const name = array[i];
             const serialId = i+1;
@@ -50,8 +52,10 @@ function displaySelectedPlayer(array) {
         return playerNumber;
     }
     // invalid condition 
-    else (
-        // validation for more than 5 players
-        alert('You Have already selected 5 Players')
-    )
+    else {
+            alert(' selected 5 Players')
+    }
+        
+       
+    
 }

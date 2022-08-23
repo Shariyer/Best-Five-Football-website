@@ -9,9 +9,10 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
     
     if (isNaN(playerNumber)){
                 //validation for empty player field 
-           alert('You must need to select player first')
+        alert('You must need to select player first')
+        document.getElementById('per-player-cost-input-field').value = '';
     }
-    else {
+    else if(playerNumber>0 && playerNumber<=5) {
             const totalPlayerExpense = playerNumber * perPlayerInputCost;
         if (isNaN(totalPlayerExpense)) {
             settingValueOnId('total-player-expense', '00');
@@ -39,6 +40,8 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
         
         // validation for per player empty field
         alert('Please provide per player cost first and calculate player expenses');
+        document.getElementById('manager-cost-input-field').value = '';
+        document.getElementById('coach-cost-input-field').value = '';
     }
     else {
         // performing addition of players cost , manager cost and coach cost
@@ -69,24 +72,20 @@ let count=0;
 
         const name = textParentNode.getElementsByClassName('name')[0].innerText;
         
-        array.push(name);
-        // if (count <= 5) {
-            
-        // }
-        // else {
-        //     alert('You have already selected 5 players');
-        // }
-        // count++;
-    //    const btnParent= event.target.parentNode.
-        const btnId = event.target.id;
-        document.getElementById(btnId).disabled=true;
         
-        // btnParent.disabled = true;
-        // btnParent.getElementsByClassName('player-selection-btn')[0].disabled = true;
-        
-        
+        if (count < 5) {
+            array.push(name);
+            count++;
+            const btnId = event.target.id;
+            document.getElementById(btnId).disabled = true;
             playerNumber = displaySelectedPlayer(array);
-            
+           
+        }
+        else {
+             alert('You have already selected 5 players');
+         }
+        
 
     })
+        
 }
