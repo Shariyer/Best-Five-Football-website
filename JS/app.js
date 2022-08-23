@@ -43,9 +43,18 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
         document.getElementById('manager-cost-input-field').value = '';
         document.getElementById('coach-cost-input-field').value = '';
     }
+    else if (isNaN(costOfCoach )) {
+        settingValueOnId('grand-total', '00');
+    }
+    else if (isNaN(costOfManager )) {
+        settingValueOnId('grand-total', '00');
+    }
     else {
         // performing addition of players cost , manager cost and coach cost
         const totalCost = totalPlayerExpense + costOfManager + costOfCoach
+        console.log(costOfManager);
+        console.log(costOfCoach);
+
         // setting value of total cost in total cost id 
         settingValueOnId('grand-total', totalCost);
     }
